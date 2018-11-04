@@ -1,0 +1,258 @@
+body {
+    background: black/*url("img/ghostthing.jpg")*/;
+}
+
+/*Wrapper rule sets the main content of the page to only 
+take up a percentage of the view and centers it*/
+
+.wrapper {
+    width: 75%;
+    margin: 0 auto;
+    border: 5px solid yellow;
+    padding: .25rem;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* Header flex rules */
+
+header {
+    display: flex;
+    border: 0px solid red;
+    flex-basis: 10%;
+}
+
+header p {
+    padding-left: .5rem;
+    border: 0px solid red;
+    margin: 0;
+    flex-basis: 37%;
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 3rem;
+    text-align: left;
+    margin: 0 0 0 .25rem;
+    flex-basis: 30%;
+}
+
+/* resize image, round corners */
+
+img.coffee {
+    width: 30%;
+    display: block;
+    box-shadow: 3px 3px #252C3F;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: .5rem;
+}
+
+
+/*  nav bar styling */
+
+nav {
+    border: 0px solid black;
+    flex-basis: 4%;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    border: 0px dotted red;
+}
+
+nav li {
+    border: 1px solid black;
+    border-radius: .5rem;
+    padding: .25rem;
+    flex-basis: 30%;
+    list-style-type: none;
+    background-color: black;
+    text-align: center;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: 'Bangers', cursive;
+}
+
+nav li:hover {
+    background-color: #551A8B;
+    color: white;
+}
+
+
+/* Grey panels */
+
+main {
+    flex-basis: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    margin-top: 0;
+    border: 2px dotted green;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin: .35rem 0;
+    border: 3px dotted green;
+}
+
+.panel {
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: .25rem;
+    padding: 0 .25rem 0 0;
+}
+
+h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: white;
+    background-color: #551A8B;
+    border-radius: .25rem;
+    margin-left: .25rem;
+    text-align: center;
+    flex-basis: 50%;
+}
+
+.tag {
+    font-size: .8rem;
+    background-color: #FFF400;
+    text-align: center;
+}
+
+
+.one {
+    flex-basis: 41%;
+}
+
+.homeone {
+    flex-basis: 30%;
+}
+
+.hometwo {
+    flex-basis: 67.5%;
+}
+
+.two {
+    flex-basis: 57%;
+}
+
+.three {
+    flex-basis: 64%;
+}
+
+.four {
+    flex-basis: 34%;
+}
+
+p, fieldset {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1rem;
+    border-radius: .25rem;
+    padding: .25rem;
+    margin-left: .25rem;
+    letter-spacing: 1px;
+}
+
+.exposition {
+    background-color: white;
+}
+
+.dateloc, fieldset {
+    font-size: .8rem;
+    display: inline-block;
+}
+
+.dateloc {
+    background-color: #FFF400;
+    margin: 0;
+}
+
+fieldset {
+    background-color: white; 
+    border: none;
+    margin: .25rem; 
+}
+
+label {
+    display: block;
+}
+
+.dialogue {
+    position: relative;
+    border-radius: .25rem;
+    padding: .25rem;
+    margin-left: .25rem;
+    background-color: #551A8B;
+}
+
+div.dialogue {
+    padding: 0;
+}
+.dialogue p {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    padding: .25rem;
+}
+
+.dialogue::after {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 5%; 
+    width: 0; 
+    height: 0; 
+    border: 0.845em solid transparent; 
+    border-bottom-color: #551A8B; 
+    border-top: 0; 
+    border-right: 0; 
+    margin-left: -0.422em; 
+    margin-top: -0.84em;
+
+}
+
+/* Footer styling */
+
+footer {
+    flex-basis: 5%;
+}
+
+.right {
+    text-align: right;
+}
+
+footer ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    border: 0px solid yellow;
+}
+
+footer li {
+    list-style-type: none;
+    margin-right: 1.4rem;
+    border: 0px dotted orange;
+}
+
+/* Bigger social icons, enlarge when you hover over them */
+footer i {
+    transform: scale(2); 
+}
+
+footer i:hover {
+    transform: scale(2.5);
+}
